@@ -8,3 +8,6 @@
  [4]: Right-click LIFE_gb/life.gb and select "open with"<br>
  [5]: Select bgb.exe as the tool to open with<br>
  
+ *****CONTROLS*****<br>
+ [ANY BUTTON]: Begin Automata<br>
+ [SELECT]:     Quit Automata<br>
