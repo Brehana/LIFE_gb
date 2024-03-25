@@ -63,12 +63,10 @@ void main(void){
 		uint8_t running = 1;
 		while(running){
 			uint8_t joydata = joypad();
+			update_board();
+			draw_life_board();
 			if(joypad() & J_START){
 				running = 0;
-			}
-			else{
-				update_board();
-				draw_life_board();
 			}
 		}
 	}
