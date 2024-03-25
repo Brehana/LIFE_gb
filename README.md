@@ -1,5 +1,6 @@
 # LIFE_gb
  Conway's LIFE ported to the GameBoy original.
+ ![splash image](splash.png)
 
  *****QUICKRUN INSTRUCTIONS*****<br>
  [1]: Download to your machine using Code -> Download ZIP<br>
