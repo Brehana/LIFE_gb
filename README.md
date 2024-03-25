@@ -1,5 +1,5 @@
 # LIFE_gb
- Conway's LIFE ported to the GameBoy original.
+ Conway's LIFE ported to the GameBoy original.<br>
  ![splash image](splash.png)
 
  *****QUICKRUN INSTRUCTIONS*****<br>
