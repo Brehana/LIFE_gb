@@ -5,7 +5,7 @@
  *	Original Algortihm by:			John H. Conway
  *	Written for the GameBoy by:		Miguel Ramos
  *
- *	Version:						12-19-25
+ *	Version:						12-22-25
  *
  *   Description:					Implementation of the Game of Life cellular automata designed by
  *                                   J. Conway. Written and optimized to run on the Gameboy hardware.
@@ -33,7 +33,7 @@ void init_board_rand(uint16_t seed)
     }
 }
 
-// Draws board stored in life_board[][] to screen.
+// Draws current generation board to screen.
 void draw_life_board(void)
 {
     for (uint8_t x = 1; x <= SCREEN_WIDTH; x++)

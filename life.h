@@ -9,7 +9,7 @@
 *	Original Algortihm by:			John H. Conway
 *	Written for the GameBoy by:		Miguel Ramos
 *
-*	Version:						12-19-25
+*	Version:						12-22-25
 *   
 *   Description:					Header file for life.c
 *
