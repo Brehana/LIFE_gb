@@ -67,6 +67,7 @@ void update_board(void)
     for (uint8_t x = 1; x <= SCREEN_WIDTH; x++) {
         for (uint8_t y = 1; y <= SCREEN_HEIGHT; y++) {
 
+            //III. Determine if the cell lives or dies.
             uint8_t neighbors =
                 current_generation[x-1][y-1] + current_generation[x][y-1] + current_generation[x+1][y-1] +
                 current_generation[x-1][y]   +                  current_generation[x+1][y]   +
@@ -74,13 +75,14 @@ void update_board(void)
 
             uint8_t alive = current_generation[x][y];
 
+            //IV. Update board.
             next_generation[x][y] =
                 (alive && (neighbors == 2 || neighbors == 3)) ||
                 (!alive && neighbors == 3);
         }
     }
 
-    // V. Swap current_generation/next_generation boards
+    // V. Swap current_generation/next_generation boards.
     uint8_t (*tmp)[SCREEN_HEIGHT + 2] = current_generation;
     current_generation = next_generation;
     next_generation = tmp;
