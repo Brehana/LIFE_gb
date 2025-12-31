@@ -55,11 +55,6 @@ void main(void)
 		while (running)
 		{
 			input_update();
-
-			if (joy_pressed & J_START)
-			{
-				break;
-			}
 			update_board();
 			draw_life_board();
 
